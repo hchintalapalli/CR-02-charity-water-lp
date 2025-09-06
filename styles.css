@@ -25,115 +25,131 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
+  /* Add the background image to the whole body */
+  background-image: url('https://cdn2.dropmarkusercontent.com/52043/5795d0fd726169c5ee07917d00e80dcd906bc9e7897b02ff3925db2aa611a5f1/preview/5047_Ethiopia_2019_CG-.jpg?Expires=1757191092&Signature=YwkTfnncCeeDhER1P25b9kE4nj3op4HGEwbplwJlBSuZgRALWTGbxKFBtYiZCkXD0hY2cm0ByKgmDLEZ8ESgWwz9r06qG6vww95y2ahYhslhN8ApYIjYNzwMSbRP5CdCDE6sd92z7apHHgExc~fFmkTvIklCIENOTcWaE5JNuGmRTiSHDpSlnoppewgBEefsNx5XgTk5o0PQBn~PBdbAijnz5d~5qYdYjHllrSW8nJvPZrNDT0j6ur6sT1dTlGVKjkdqxxDbUXzSVPuiDLYGjQNDTpLkn36GQqVZxnA9DAQsOT0ayO0KiTYMmaou6ONJhfbETfMnyLIaYtgGtuD0PA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+  background-size: cover; /* Make image cover the whole body */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep image fixed during scroll */
+  /* Add a blue overlay for readability */
+  background-blend-mode: darken;
+  background-color: rgba(46, 157, 247, 0.45);
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #222;
 }
 
-/* Add a slight shadow and rounded corners to each section for depth */
+/* Make sections cleaner: less rounded corners, lighter shadow */
 section {
-  background: #fff; /* White background for sections */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
-  margin: 24px 10px; /* Space between sections */
-  padding: 24px 16px;
+  background: #fff7e1; /* White background for sections */
+  border-radius: 4px; /* Slightly rounded corners for a modern look */
+  box-shadow: 0 1px 4px rgba(46, 157, 247, 0.04); /* Very soft shadow */
+  margin: 20px 24px; /* Add left/right margin so box doesn't touch screen edge */
+  padding: 20px 15px; /* Reasonable horizontal padding */
 }
 
 /* Hero Section Styles */
 .hero {
-  position: relative; /* Needed for overlay */
-  /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;      /* Make the image cover the whole area */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
-  text-align: center;          /* Center the text */
-  padding: 60px 20px;          /* Add space above and below */
-  border-radius: 0 0 16px 16px; /* Only round bottom corners */
-
-  /* Add a dark overlay for better text readability */
-  /* This uses a simple linear-gradient overlay */
-  background-blend-mode: darken;
-  background-color: rgba(46, 157, 247, 0.45); /* Blue overlay */
+  position: relative;
+  /* Remove background image from hero */
+  background: none; /* No background for hero, let body show through */
+  color: #fff7e1;
+  text-align: right; /* Align all hero text to the right */
+  padding: 48px 16px; /* Slightly less padding */
+  border-radius: 0 0 8px 8px; /* Less rounded bottom corners */
+  margin-right: 40px; /* Add space on the right side */
 }
 
-/* Make the headline bold and modern */
+/* Headline: modern, less bold */
 .hero h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
+  font-size: 2.6em; /* Slightly larger headline */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
-/* Style the subheadline */
+/* Subheadline: cleaner */
 .hero p {
-  font-size: 1.2em;
+  font-size: 1.3em; /* Slightly larger subheadline */
   margin-top: 0;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.08);
 }
 
 /* Story Section Styles */
 .story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
+  background-color: #003366;
+  color: #fff7e1;
+  text-align: center; /* Center align story text */
+  padding: 24px 30px; /* More padding on sides for a narrower box */
+  border-radius: 4px;
+  box-shadow: none;
+  max-width: 300px; /* Shrink width of story box */
+  margin: 20px 0 20px 1500px; /* Align box to the right side */
 }
 
-/* Add accent color to section headings */
+/* Headings: less bold, more modern */
 h2 {
-  color: #2E9DF7; /* Primary blue */
+  color: #fff7e1;
   margin-top: 0;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+h3 {
+  color: #003366;
+  margin-top: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center; /* Center h3 headings */
+  font-size: 1.5em; /* Increased font size for h3 */
 }
 
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
+  background-color: #bf6c46;
   color: #222;
   text-align: center;
-  padding: 30px 20px;
+  padding: 24px 14px;
+  border-radius: 4px;
+  box-shadow: none;
 }
 
-/* Style the impact story image */
+/* Impact story image: less rounded, lighter shadow */
 .impact-image {
   width: 100%;
   max-width: 320px;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(46, 157, 247, 0.06);
 }
 
-/* Donate Button Styles */
+/* Donate Button: less rounded, lighter shadow, modern font */
 .donate-button {
   display: inline-block;
-  background-color: #4FCB53; /* Green */
-  color: #fff;
-  padding: 14px 32px;
+  background-color: #003366;
+  color: #fff7e1;
+  padding: 12px 28px;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-top: 18px;
-  box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1em;
+  margin-top: 14px;
+  box-shadow: 0 1px 4px rgba(79, 203, 83, 0.06);
   transition: background 0.3s, transform 0.2s;
   border: none;
   cursor: pointer;
 }
 
-/* Change button color when hovered */
+/* Button hover: keep effect, less lift */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
-  transform: translateY(-2px) scale(1.04); /* Slight lift */
+  background-color: #159A48;
+  transform: translateY(-1px) scale(1.02);
 }
 
-/* Add some spacing between sections */
+/* Section spacing: tighter */
 section {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 /* 
@@ -146,25 +162,27 @@ section {
 @media (max-width: 600px) {
   /* Make hero section padding smaller on small screens */
   .hero {
-    padding: 32px 8px;
+    padding: 24px 6px;
     font-size: 1em;
+    border-radius: 0 0 6px 6px;
   }
 
   /* Make headline font size smaller so it fits on small screens */
   .hero h1 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   /* Make subheadline font size smaller */
   .hero p {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   /* Make story and call-to-action sections have less padding */
   .story,
   .call-to-action,
   .donation-section {
-    padding: 14px 8px;
+    padding: 10px 6px;
+    border-radius: 4px;
   }
 
   /* Make impact story image smaller and stack above the text */
@@ -174,8 +192,9 @@ section {
   }
 
   .impact-image {
-    width: 90%;    /* Make image take up most of the width */
-    max-width: 220px;
+    width: 90%;
+    max-width: 180px;
+    border-radius: 4px;
   }
 }
 
@@ -183,16 +202,17 @@ section {
 @media (min-width: 601px) {
   /* Show image and text side by side in the impact story */
   .impact-content {
-    display: flex;           /* Place items in a row */
-    align-items: center;     /* Vertically center items */
-    justify-content: center; /* Center the whole group */
-    gap: 28px;               /* Space between image and text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
   }
 
   .impact-image {
-    width: 300px;
+    width: 260px;
+    border-radius: 4px;
   }
 }
