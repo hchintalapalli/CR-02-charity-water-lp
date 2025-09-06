@@ -26,7 +26,7 @@ Fonts:
 /* Set up the main font and background color for the whole page */
 body {
   /* Add the background image to the whole body */
-  background-image: url('https://cdn2.dropmarkusercontent.com/52043/5795d0fd726169c5ee07917d00e80dcd906bc9e7897b02ff3925db2aa611a5f1/preview/5047_Ethiopia_2019_CG-.jpg?Expires=1757191092&Signature=YwkTfnncCeeDhER1P25b9kE4nj3op4HGEwbplwJlBSuZgRALWTGbxKFBtYiZCkXD0hY2cm0ByKgmDLEZ8ESgWwz9r06qG6vww95y2ahYhslhN8ApYIjYNzwMSbRP5CdCDE6sd92z7apHHgExc~fFmkTvIklCIENOTcWaE5JNuGmRTiSHDpSlnoppewgBEefsNx5XgTk5o0PQBn~PBdbAijnz5d~5qYdYjHllrSW8nJvPZrNDT0j6ur6sT1dTlGVKjkdqxxDbUXzSVPuiDLYGjQNDTpLkn36GQqVZxnA9DAQsOT0ayO0KiTYMmaou6ONJhfbETfMnyLIaYtgGtuD0PA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+  background-image: url('https://cdn2.dropmarkusercontent.com/52043/5795d0fd726169c5ee07917d00e80dcd906bc9e7897b02ff3925db2aa611a5f1/preview/5047_Ethiopia_2019_CG-.jpg?Expires=1757191092&Signature=YwkTfnncCeeDhER1P25b9kE4nj3op4HGEwbplwJlBSuZgRALWTGbxKFBtYiZCkXD0hY2cm0ByKgmDLEZ8ESgWwz9r06qG6vww95y2ahYhslhN8ApYIjYNzwMSbRP5CdCDE6sd92z7apHHgExc~fFmkTvIklCIENOTcWaE5JNuGmRTiSHDpSlnoppewgBEefsNx5XgTk5o0PQBn~PBdbAijnz5d~5qYdYjHllrSW8nJvPZrNDT0j6ur6sT1dTlGVKjkdqxxDbUXzSVPuiDLYGjQNDTpLkn36GQqVZxnA9DAQsOT0ayO0KiTYMmaou6ONJhfbETfMnyLIaYtgGtuD0PA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ'); 
   background-size: cover; /* Make image cover the whole body */
   background-position: center center;
   background-repeat: no-repeat;
