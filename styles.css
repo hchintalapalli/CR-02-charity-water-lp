@@ -33,13 +33,12 @@ body {
   background-attachment: fixed; /* Keep image fixed during scroll */
   /* Add a blue overlay for readability */
   background-blend-mode: darken;
-  background-color: rgba(46, 157, 247, 0.45);
+  background-color: rgba(57, 139, 206, 0.45);
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #222;
 }
-
 /* Make sections cleaner: less rounded corners, lighter shadow */
 section {
   background: #fff7e1; /* White background for sections */
